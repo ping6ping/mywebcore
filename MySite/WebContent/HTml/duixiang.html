@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script type="text/javascript">
+function xianshi()
+{
+	var len = navigator.plugins.length;
+	write("<TABLE BORDER = 0>")
+	write("<CAPTION>外挂插件清单</CAPTION>")
+	write("<TR><TR><TH>名称<TH>描述<TH>文件名")
+	for(var i = 0;i<len;i++)
+		{
+		write("<TR><TD>"+i+"<TD>"+navigator.plugins[i].name+"<TD>"+navigator.plugins[i].description+"<TD>"+navigator.plugins[i].filename)
+		}}
+</script>
+<title>Insert title here</title>
+</head>
+<body>
+<input name="button" type="button" value="查看插件" >
+</body>
+</html>

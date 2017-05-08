@@ -1,0 +1,39 @@
+@CHARSET "UTF-8";
+h1{
+	color:green;
+	background:green;
+	font-size: 30px;
+	font-family:;
+}
+ p{
+	color:red;
+	background:red;
+	font-size: 30px;
+	font-family:;
+} 
+.newclass{
+	color: black;
+	font-size:隶书;
+	background:pink;
+}
+p.otherclass{
+	color:green;
+	background:green;
+}
+ol li{
+	color:red;
+}
+div{
+	font-weight: bold;
+	font-size:normal;
+	font-family:隶书;
+}
+span{
+	    font-size:200%;
+	    font-weight: bold;
+	    text-transform:uppercase;
+	    word-spacing:20px;
+	    text-length:30px;
+	    textdecoration:overline;
+	}
+

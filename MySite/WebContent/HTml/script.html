@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link href="duixiang.html">
+<script type="text/javascript" src="../js/javast.js"></script>
+<script type="text/javascript" language="javascript">
+function Student(name,id)
+{
+	
+	this.name = name;
+	this.getName = getName;
+	this.getId   = getId;
+	this.id = id;
+	this.toString = toString;
+	
+	}
+	function getName()
+	{
+		return this.name;
+	}
+	function getId()
+	{
+		return this.id;
+	}
+	function toString()
+	{
+		return this.张玉良;
+	}
+	function meclick()
+	{
+		var s = new Student("张玉","liangliang")
+		s["张玉良"]="帅帅";
+		s.toString =toString;
+		alert(s.toString());
+	}
+	function chuankouclose()
+	{
+		window.close();
+	}
+function dialogBox()
+{
+	alert ("大良贼帅");
+	var temp;
+	temp = confirm("are you ok");
+	alert(temp);
+	prompt("houston vs thunder","houston");
+	
+	}
+</script>
+</head>
+<body >
+<input name="button" type="button" value="打开对话框" onclick="dialogBox()">
+<input name="button" type="button" value="关闭对话框" onclick="chuankouclose()">
+<input name="button" type="button" value="打开凉凉" onclick="liangliang()">
+<input name="button" type="button" value="打印数组的索引" onclick="bianli()">
+<input name="button" type="button" value="显示插件" onclick="xianshi()">
+
+<a href="javascript:self.close()">关闭窗口</a> 
+
+</body>
+</html>

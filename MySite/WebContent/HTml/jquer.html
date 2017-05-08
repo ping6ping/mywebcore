@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript">
+	function get_text() {
+		var jq = $('#txt');
+		alert(jq.val());
+	}
+	function divSelect() {
+		$("div").css('border', '1px solid red'); // 两个参数表示的是设置，一个参数表示是获取
+		alert($("div").css('border'));
+	}
+	function zuheSelect() {
+		$(".CBA").css('color', 'green');
+	}
+	function classSelect() {
+		$(".NBA,#houston").css('color', 'red');
+	}
+	function yinchang() {
+		$('#liang').hide('slow');
+
+	}
+	function bianhua() {
+		if ($('#shao')[0].value == "隐藏") {
+			$('#liang').hide('slow');
+			$('#shao').attr("value", "出现")
+		} else if ($('#shao')[0].value == "出现") {
+			$('#liang').show('slow');
+			$('#shao').attr("value", "隐藏")
+		}
+
+		//yincang();
+
+	}
+</script>
+</head>
+<body>
+	<input type="text" id="txt" />
+	<button type="button" onclick="get_text()">走起</button>
+	<hr />
+	<div id="liangshao">良少有话说</div>
+	<div id="talk"></div>
+	<br />
+	<input type="button" value="ID选择器" onclick="divSelect()" />
+	<hr />
+	<ul>[]
+		<li class="NBA" id="houston">火箭</li>
+		<li class="CBA">宏远</li>
+		<li>稠州</li>
+		<li class="NBA">马刺</li>
+		<li>马可波罗</li>
+	</ul>
+	<input type="button" value="Class选择器" onclick="classSelect()" />
+	<input type="button" value="组合选择器" onclick="zuheSelect()" />
+	<hr />
+	<div id="liang"
+		style="color: red; background-color: green; width: 200px; height: 200px; display: block;"></div>
+	<input id="shao" type="button" value="隐藏" onclick="bianhua()"></input>
+
+	<div id="jing"
+		style="position: relative; width: 24px; height: 32px; border: 1px solid red;"></div>
+	<button type="button" id="ping">向右</button>
+
+	<script type="text/javascript">
+		$('#ping').bind('click', function() {
+			$('#jing').animate({
+				left : '+=100px'
+			}, 3000);
+			$('#jing').animate({
+				left : '-=100px'
+			}, 3000);
+		});
+	</script>
+
+</body>
+</html>

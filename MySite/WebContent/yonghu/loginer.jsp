@@ -16,9 +16,13 @@
     <p>当前的时间为 <%=time %></p>
     <p>当前的人数为 <%=all.size() %><p>
     <p>当前的在线人数为<%
-    Iterator it =all.iterator();
-    while(it.hasNext())
-    {%>  <%=it.next() %>       
-    <% }%>
+	Iterator iter = all.iterator();
+	while(iter.hasNext()){
+%>		
+		<%= iter.next()%>
+<%		
+	}
+
+%>
 </body>
 </html>

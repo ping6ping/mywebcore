@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<form name="form1" method="post" action="<%=request.getContextPath()%>/zhang/liangliang">
+<form name="form1" method="get" action="<%=request.getContextPath()%>/zhang/liangliang">
 姓名<input name="userName" type="text" size="12">
 <br> 
 密码
